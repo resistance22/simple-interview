@@ -11,25 +11,5 @@
  * countCharacters([1,2,3,4,5,6,7,8,9,10, 15]): {"fizz": 3, "buzz": 1, "fizzbuzz": 1}
  */
 export function fizzBuzz (numbers: number[]) : Record<"fizz" | "buzz" | "fizzbuzz", number> {
-  const res  ={
-    "fizz" : 0,
-    "buzz": 0,
-    "fizzbuzz": 0
-  }
-  for(const c of numbers){
-    if(c % 15 === 0){
-      res["fizzbuzz"] += 1
-      console.log('fizzbuzz', c)
-    } else if (c % 5 === 0){
-      res["buzz"] += 1
-      console.log('buzz', c)
-
-    } else if (c % 3 === 0){
-      res['fizz'] += 1
-      console.log('fizz', c)
-
-    }
-  }
-
-  return res
+  throw new Error('Not Implemented!')
 }
