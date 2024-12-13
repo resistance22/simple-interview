@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { search } from '../questions/q2'
+import { search } from '../questions/search'
 
 test('Find 8 inside a sorted array', () => {
   expect(search(8, [1,2,3,4,5,6,7,8])).toBe(7)
