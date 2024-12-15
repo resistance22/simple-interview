@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { isPalindrome } from '../questions/palindrome'
+import { isPalindrome } from '../../questions/set1/palindrome'
 
 test('aabbaa should be palindrome', () => {
   expect(isPalindrome("aabbaa")).toBe(true)

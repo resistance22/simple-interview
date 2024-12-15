@@ -1,4 +1,4 @@
-import { fizzBuzz } from "../questions/fizzbuzz";
+import { fizzBuzz } from "../../questions/set1/fizzbuzz";
 import { expect, test } from 'vitest'
 
 

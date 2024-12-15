@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { countCharacters } from '../questions/countCharacters'
+import { countCharacters } from '../../questions/set1/countCharacters'
 
 test('Should return correct characters count!', () => {
   expect(countCharacters("aaabbcddeXeXffffGGGGG")).toMatchObject({
