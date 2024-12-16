@@ -11,5 +11,13 @@ type Fn = (number: number, index: number) => boolean
  * filter([1,2,3,4], (val, index) => index < 2): [1,2,3]
  */
 export function filter(arr: number[], fn: Fn): number[] {
-  throw new Error('Not Implemented!')
+  const result: number[] = [];
+  
+  for (let i = 0; i < arr.length; i++) {
+    if (fn(arr[i], i)) {
+      result.push(arr[i]);
+    }
+  }
+
+  return result;
 }
