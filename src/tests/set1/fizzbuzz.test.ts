@@ -1,9 +1,12 @@
 import { fizzBuzz } from "../../questions/set1/fizzbuzz";
-import { expect, test } from 'vitest'
+import { expect } from 'vitest'
+import { testImplemented } from '../testUtils'
 
 
 
-test('Should count correct number of multiplies', () => {
+testImplemented(
+  { question: 'set1/fizzbuzz', name: 'Should count correct number of multiplies' },
+  () => {
   expect(fizzBuzz([1,2,3,5,15,33,10,25,45])).toMatchObject({
     "fizz": 2,
     "buzz":  3,

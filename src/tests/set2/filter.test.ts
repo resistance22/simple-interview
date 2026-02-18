@@ -1,9 +1,12 @@
 import { filter } from "../../questions/set2/filter";
-import { expect, test } from 'vitest'
+import { expect } from 'vitest'
+import { testImplemented } from '../testUtils'
 
 
 
-test('Multiples of three', () => {
+testImplemented(
+  { question: 'set2/filter', name: 'Multiples of three' },
+  () => {
   const filterFN = (num: number) => num % 3 === 0
   const res = filter([1,2,3,5,15,33,10,25,45], filterFN)
   expect(res).toHaveLength(4)
@@ -14,7 +17,9 @@ test('Multiples of three', () => {
   expect(res).not.toContain(25)
 })
 
-test('Get First Element', () => {
+testImplemented(
+  { question: 'set2/filter', name: 'Get First Element' },
+  () => {
   const filterFN = (_: number, index: number) => {
     return index === 0
   } 
@@ -23,7 +28,9 @@ test('Get First Element', () => {
   expect(res).toContain(1)
 })
 
-test('Get index multiples of 2', () => {
+testImplemented(
+  { question: 'set2/filter', name: 'Get index multiples of 2' },
+  () => {
   const filterFN = (_: number, index: number) => index % 2 === 0  
   const res = filter([1,2,3,5,15,33,10,25,45], filterFN)
   expect(res).toHaveLength(5)

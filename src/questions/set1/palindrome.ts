@@ -11,6 +11,8 @@
  * isPalindrome("madam"): true
  * isPalindrome("hello"): false
  */
+import { NotImplementedError } from '../NotImplementedError'
+
 export function isPalindrome(input: string): boolean {
-  throw new Error('Not Implemented!')
+  throw new NotImplementedError()
 }

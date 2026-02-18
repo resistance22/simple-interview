@@ -1,14 +1,21 @@
-import { expect, test } from 'vitest'
+import { expect } from 'vitest'
 import { isPalindrome } from '../../questions/set1/palindrome'
+import { testImplemented } from '../testUtils'
 
-test('aabbaa should be palindrome', () => {
+testImplemented(
+  { question: 'set1/palindrome', name: 'aabbaa should be palindrome' },
+  () => {
   expect(isPalindrome("aabbaa")).toBe(true)
 })
 
-test('aabbb should not be palindrome', () => {
+testImplemented(
+  { question: 'set1/palindrome', name: 'aabbb should not be palindrome' },
+  () => {
   expect(isPalindrome("aaabab")).toBe(false)
 })
 
-test('madam should be palindrome', () => {
+testImplemented(
+  { question: 'set1/palindrome', name: 'madam should be palindrome' },
+  () => {
   expect(isPalindrome("madam")).toBe(true)
 })

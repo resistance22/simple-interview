@@ -7,6 +7,8 @@
  * @param {number[]} numbers
  * @return {*}  {(number | null)}
  */
+import { NotImplementedError } from '../NotImplementedError'
+
 export function search(candidate: number, numbers: number[]): number | null{
-  throw new Error('Not Implemented!')
+  throw new NotImplementedError()
 }

@@ -10,6 +10,8 @@
  * 
  * countCharacters("aabbcc"): {"a": 2, "b": 2, "c": 2}
  */
+import { NotImplementedError } from '../NotImplementedError'
+
 export function countCharacters (input: string) : Record<string, number> {
-  throw new Error('Not Implemented!')
+  throw new NotImplementedError()
 }

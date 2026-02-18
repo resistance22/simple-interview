@@ -10,6 +10,8 @@
  * 
  * countCharacters([1,2,3,4,5,6,7,8,9,10, 15]): {"fizz": 3, "buzz": 1, "fizzbuzz": 1}
  */
+import { NotImplementedError } from '../NotImplementedError'
+
 export function fizzBuzz (numbers: number[]) : Record<"fizz" | "buzz" | "fizzbuzz", number> {
-  throw new Error('Not Implemented!')
+  throw new NotImplementedError()
 }
